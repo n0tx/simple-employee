@@ -10,3 +10,4 @@ $routes->get('helloworld', 'HelloWorld::index');
 
 $routes->get('/', 'EmployeeController::index');
 $routes->post('add', 'EmployeeController::add');
+$routes->get('edit/(:num)', 'EmployeeController::edit/$1');

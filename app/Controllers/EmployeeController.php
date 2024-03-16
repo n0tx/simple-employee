@@ -32,4 +32,14 @@ class EmployeeController extends BaseController
             window.location="'.base_url('/').'";
         </script>';
     }
+
+    public function edit($id = null) {
+        $employeeModel = new \App\Models\EmployeeModel();
+        $data['title'] = 'Simple Employee Management';
+        $data['employee'] = $employeeModel->find($id);
+
+        return view('employee_edit', $data);
+    }
+
+
 }
