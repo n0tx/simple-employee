@@ -56,7 +56,7 @@
                                     <td>
                                         <a href="<?= base_url('/edit/' . $employee['id']); ?>" class="btn btn-success" data-target="#editModal">
                                             Edit</a>
-                                        <a href="<?= base_url('/delete/' . $employee['id']); ?>" onclick="javascript:return confirm('Are you sure you want to delete employee data?')" class="btn btn-danger">
+                                        <a href="<?= base_url('/delete/' . $employee['id']); ?>" onclick="javascript:return confirm('Are you sure want to delete employee data?')" class="btn btn-danger">
                                             Delete</a>
                                     </td>
                                 </tr>

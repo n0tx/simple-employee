@@ -60,5 +60,15 @@ class EmployeeController extends BaseController
         </script>';
     }
 
+    public function delete($id = null) {
+        $employeeModel = new EmployeeModel();
+        $employeeModel->delete($id);
+        echo '
+        <script>
+            alert("Employee Data Deleted");
+            window.location="'.base_url('/').'";
+        </script>';
+    }
+
 
 }
