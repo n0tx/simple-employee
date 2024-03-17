@@ -1,7 +1,6 @@
 #-------------------------
 # Operating Specific Junk Files
 #-------------------------
-
 # OS X
 .DS_Store
 .AppleDouble
@@ -41,7 +40,8 @@ $RECYCLE.BIN/
 #-------------------------
 # These should never be under version control,
 # as it poses a security risk.
-.env
+# .env # comment ini biar .env bisa di push ke git remote
+# ini dari termux mobile
 .vagrant
 Vagrantfile
 
